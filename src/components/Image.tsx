@@ -14,7 +14,6 @@ const Image: FC<IImageProps>  = ( props : IImageProps) => {
     imageStyle.position = 'absolute' as 'absolute';
     imageStyle.top = props.top;
     imageStyle.left = props.left;    
-    console.log(props);
     return (
     
             ( props.index === props.selectedMarker ? 
