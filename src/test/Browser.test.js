@@ -1,17 +1,19 @@
 import React from 'react';
-
 import Browser from '../components/Browser';
 import Enzyme from 'enzyme';
 import { mount } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-import { useAppDispatch } from '../app/hooks';
 import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
-import {initialState} from '../redux/MapReducer'
-
 Enzyme.configure({ adapter: new Adapter() });
 
 const mockStore = configureStore([]);
+
+/*
+
+The two test cases here are for Unit testing the main Browser component in App
+It tests if the component renders fine & if it is rendering an image with the source equal to the background image source
+*/
 
 describe('Browser', () => {
     let wrapper;
@@ -32,6 +34,6 @@ describe('Browser', () => {
         expect(wrapper).not.toBeNull();
     })
     it('shows my map', () => {
-        expect(wrapper.find("img").prop("src")).toEqual("background-map.jpg");
+        expect(wrapper.find("img").prop("src")).toEqual("background-map.jpg");    //Source can be changed and it will fail the test
     })
 })

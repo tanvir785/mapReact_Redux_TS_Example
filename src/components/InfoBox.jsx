@@ -3,6 +3,12 @@ import { useAppDispatch } from '../app/hooks';
 import {Button, Modal} from 'react-bootstrap'
 import { selectMarker } from '../redux/MapReducer';
 
+/*
+This component shows Map Marker info in a Modal form. 
+Open => This signals the modal box to open or close depending on the selected marker chosen. It is passed from Parent app to Children.
+Makes use of React Bootstrap
+
+*/
 const InfoBox = ({open, info}) => {
 
     const dispatch = useAppDispatch();
