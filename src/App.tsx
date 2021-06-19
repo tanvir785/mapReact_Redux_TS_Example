@@ -1,4 +1,4 @@
-import React, {  FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import { useAppSelector } from './app/hooks';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Importing the Bootstrap CSS
@@ -17,13 +17,10 @@ Browser => Contains main map
 Image => Contains individual markers
 InfoBox => Contains the modal box
 
-Marker is the selected index of the sample JSON data
+Marker is the selected index of the sample JSON array data
 */
 export const App: FC = () => {
 
-  useEffect(() => {
-  }, []);
-  
   const marker = useAppSelector(selectMapMarker);
   let initialPointStyle = {} as IPointStyle;
 
