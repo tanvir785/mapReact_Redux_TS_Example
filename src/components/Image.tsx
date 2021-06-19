@@ -5,13 +5,15 @@ import redmarker from '../images/marker-selected.png';
 import { selectMarker } from '../redux/MapReducer';
 import { IImageProps, IPointStyle } from '../interface/ICommon';
 
+
 const Image: FC<IImageProps>  = ( props : IImageProps) => {
     
     const dispatch = useAppDispatch();
     const imageStyle = {} as IPointStyle;
 
+    //Set values
     imageStyle.cursor = 'pointer';
-    imageStyle.position = 'absolute' as 'absolute';
+    imageStyle.position = 'absolute' as 'absolute';   
     imageStyle.top = props.top;
     imageStyle.left = props.left;    
     return (
