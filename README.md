@@ -1,4 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Introduction
+
+The solution is developed using :
+-	TypeScript, React, Redux
+-	UI: Modal box from React Bootstrap
+-	Two example test cases using Jest
+
+
+## Use of SOLID principles
+
+ ### Single Responsibility Principle:
+-	Every component has one responsibility
+o	Example: Image component shows the single individual markers on the map
+o	MapBrowser shows the background or the Map on specific positions on specific positions
+o	This keeps one component small in code size and follows the SOLID principle and makes it easier for other programmers to follow about the responsibility of the Component and provides separation of concerns.
+
+ ### Open Closed Principle:
+-	Used in the Modal box: we could easy add more properties
+Interface Segration Principle
+-	IPoint describes X, Y co-ordinates
+-	IPointStyle extends IPoint and adds Style to points
+Using TypeScript also has advantages as it has built in support for SOLID principles
+
+ ### Future Developmenta
+-	This project has taken into account of the MapBrowser growing into more than one Background image. The implementation would need only minor code change by iterating an example json file provided in the >data directory (map-images.json) which would contain the URL to the image and the position to insert it inside the App.ts.
+-	Small and Cohesive interfaces used which should enable for easy implementation for new Components by extending
+-	As Single Responsibility Principle has been followed, writing test cases in future would be very easy.
+-	Room for Improvement
+o	Loading of the JSON file => Async loading
+
+
 
 ## Available Scripts
 
@@ -37,8 +67,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

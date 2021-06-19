@@ -1,0 +1,10 @@
+[   
+    {
+        "url": "../images/background-map.jpg",
+        "position" : [0,0]
+    },
+    {
+        "url": "../images/background-map.jpg",
+        "position" : [800,0]
+    }
+]
