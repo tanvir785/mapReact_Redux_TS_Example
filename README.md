@@ -1,4 +1,5 @@
 ## Introduction
+![image](https://user-images.githubusercontent.com/34472881/122659208-e7ea1f00-d1b8-11eb-9080-38b6c8c8c12e.png)
 
 The solution is developed using :
 -	TypeScript, React, Redux
