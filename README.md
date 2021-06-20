@@ -3,29 +3,37 @@
 The solution is developed using :
 -	TypeScript, React, Redux
 -	UI: Modal box from React Bootstrap
--	Two example test cases using Jest
+-	Two example test cases using Jest/Enzyme
 
 
 ## Use of SOLID principles
 
  ### Single Responsibility Principle:
--	Every component has one responsibility
+o	Every component has one responsibility
 o	Example: Image component shows the single individual markers on the map
 o	MapBrowser shows the background or the Map on specific positions on specific positions
 o	This keeps one component small in code size and follows the SOLID principle and makes it easier for other programmers to follow about the responsibility of the Component and provides separation of concerns.
 
  ### Open Closed Principle:
--	Used in the Modal box: we could easy add more properties
-Interface Segration Principle
--	IPoint describes X, Y co-ordinates
--	IPointStyle extends IPoint and adds Style to points
+o	Used in the Modal box: we could easy add more properties
+
+ ### nterface Segration Principle
+o	IPoint describes X, Y co-ordinates
+o	IPointStyle extends IPoint and adds Style to points
 Using TypeScript also has advantages as it has built in support for SOLID principles
 
- ### Future Developmenta
--	This project has taken into account of the MapBrowser growing into more than one Background image. The implementation would need only minor code change by iterating an example json file provided in the >data directory (map-images.json) which would contain the URL to the image and the position to insert it inside the App.ts.
--	Small and Cohesive interfaces used which should enable for easy implementation for new Components by extending
--	As Single Responsibility Principle has been followed, writing test cases in future would be very easy.
--	Room for Improvement
+ ### Testing
+o	The testing has been structured into testing reducer functions as well as Component (example Browser.test.js)
+o	4 example tests written, that tests initial state to loaded/modified state
+o   Jest and Enzyme for React 17 are used to do testing
+
+
+ ### Future Developments
+o	This project has taken into account of the MapBrowser growing into more than one Background image. The implementation would need only minor code change by iterating an example json file provided in the >data directory (map-images.json) which would contain the URL to the image and the position to insert it inside the App.ts.
+o	Small and Cohesive interfaces used which should enable for easy implementation for new Components by extending
+o	As Single Responsibility Principle has been followed, writing test cases in future would be very easy.
+
+ ###	Room for Improvement
 o	Loading of the JSON file => Async loading
 
 
@@ -33,6 +41,10 @@ o	Loading of the JSON file => Async loading
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs the dependencies needed to run the project
 
 ### `npm start`
 
