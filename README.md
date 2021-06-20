@@ -1,5 +1,4 @@
 ## Introduction
-![image](https://user-images.githubusercontent.com/34472881/122659208-e7ea1f00-d1b8-11eb-9080-38b6c8c8c12e.png)
 
 The solution is developed using :
 -	TypeScript, React, Redux
@@ -18,7 +17,7 @@ o	This keeps one component small in code size and follows the SOLID principle an
  ### Open Closed Principle:
 o	Used in the Modal box: we could easy add more properties
 
- ### nterface Segration Principle
+ ### Interface Segration Principle
 o	IPoint describes X, Y co-ordinates
 o	IPointStyle extends IPoint and adds Style to points
 Using TypeScript also has advantages as it has built in support for SOLID principles
@@ -80,3 +79,5 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### Screenshot
+![image](https://user-images.githubusercontent.com/34472881/122659208-e7ea1f00-d1b8-11eb-9080-38b6c8c8c12e.png)
