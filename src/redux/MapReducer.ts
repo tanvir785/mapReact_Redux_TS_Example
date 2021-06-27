@@ -17,6 +17,6 @@ export const MapSlice = createSlice({
 
 export const { selectMarker }=  MapSlice.actions;
 
-export const selectMapMarker = (state: RootState) => state.map.selectedMarker;
+export const markerIndex = (state: RootState) => state.map.selectedMarker;
 
 export default MapSlice.reducer;

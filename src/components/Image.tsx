@@ -18,14 +18,14 @@ const Image: FC<IImageProps>  = ( props : IImageProps) => {
     imageStyle.left = props.left;    
     return (
     
-            ( props.index === props.selectedMarker ? 
+            ( props.index === props.marker ? 
                 <img alt =""  style ={imageStyle} onClick={() => dispatch(selectMarker(props.index))} src ={redmarker}></img>            
             :
                 <img alt =""  style ={imageStyle} onClick={() => dispatch(selectMarker(props.index))} src ={marker}></img>
     
             )
         
-    ) 
+    )
 }
 
 export default Image;

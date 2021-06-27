@@ -17,7 +17,7 @@ o	This keeps one component small in code size and follows the SOLID principle an
  ### Open Closed Principle:
 o	Used in the Modal box: we could easy add more properties
 
- ### nterface Segration Principle
+ ### Interface Segration Principle
 o	IPoint describes X, Y co-ordinates
 o	IPointStyle extends IPoint and adds Style to points
 Using TypeScript also has advantages as it has built in support for SOLID principles
@@ -35,7 +35,6 @@ o	As Single Responsibility Principle has been followed, writing test cases in fu
 
  ###	Room for Improvement
 o	Loading of the JSON file => Async loading
-
 
 
 ## Available Scripts

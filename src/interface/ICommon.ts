@@ -17,12 +17,15 @@ export interface IPointStyle extends IPoint{    //Describes the css styling of t
 
 //Props
 export interface IBrowserProps extends IPointStyle {    
-    name: string,
+    name: string;
 }
 
-export interface IImageProps extends IPointStyle {
-    index: number,
-    selectedMarker: number,
+export interface IImageListProps extends IPointStyle {
+    marker: number;
+}
+
+export interface IImageProps extends IImageListProps {
+    index: number;
 }
 
 export interface MapState {     //This is used in Reducer
