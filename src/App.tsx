@@ -15,7 +15,6 @@ Each component is broken by it's responsibility
 Browser => Contains main map
 Image => Contains individual markers
 InfoBox => Contains the modal box
-
 Marker is the selected index of the sample JSON array data
 */
 export const App: FC = () => {
